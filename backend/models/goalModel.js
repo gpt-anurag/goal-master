@@ -12,7 +12,7 @@ const goalSchema = mongoose.Schema(
       required: [true, 'Please add a text value'],
     },
   },
-  { timeStamp: true }
+  { timestamps: true }
 )
 
 module.exports = mongoose.model('Goal', goalSchema)
