@@ -9,5 +9,9 @@ export default defineConfig({
   },
   server: {
     open: true,
+    proxy: {
+      '/api/users': 'http://localhost:5000',
+      '/api/goals': 'http://localhost:5000',
+    },
   },
 })
